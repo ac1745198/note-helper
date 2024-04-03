@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Taker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.0/cerulean/bootstrap.min.css" integrity="sha512-cx8mTQsbSBRm6g8SHosX/8YPQtx9FhZNl72wuCYc3Z1gUB2f0Qi+jMvYNPdwg+bc3Uy0LbdGIKtK3D8yR5VxGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dtUR4XUvdbtdTG5hgvRrBdLCgGUfsW8L1fsJDY7CQ4AHebghlfD8fu55Mf5XTtWbpy3DE7IL4aE6pu6L2tGzEg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #343a40 !important;
+    }
+
+    .navbar-brand {
+      color: #ffffff !important;
+      font-weight: bold;
+    }
+
+    .icons i {
+      margin-left: 15px;
+      margin-right: 15px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #ffffff;
+    }
+
+    .icons i:hover {
+      color: #007bff;
+    }
+
+    .list-container .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .list-group-item {
+      cursor: pointer;
+    }
+
+    .note-title,
+    .note-textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .note-textarea {
+      height: 200px;
+      resize: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Note Taker</a>
+      <div class="icons">
+        <i class="fas fa-save save-note"></i>
+        <i class="fas fa-plus new-note"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Your Notes</h5>
+            <ul class="list-group">
+              <li class="list-group-item">Note 1</li>
+              <li class="list-group-item">Note 2</li>
+              <li class="list-group-item">Note 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Note Title</h5>
+            <input type="text" class="note-title" placeholder="Enter note title">
+            <h5 class="card-title mt-3">Note Text</h5>
+            <textarea class="note-textarea" placeholder="Enter note text"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/index.js"></script>
+</body>
+
+</html>
